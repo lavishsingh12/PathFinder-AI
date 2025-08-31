@@ -27,7 +27,7 @@ const Chatbot = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      content: "Hi! I'm your AI Career Advisor. I'm here to help you with career guidance, skill development, and job opportunities. What would you like to discuss today?",
+      content: "Hey! 👋 I'm your **AI Career Strategist** from CareerCraft! I'm here to help you:\n\n🚀 **Build your dream career**\n📈 **Learn in-demand skills** \n💰 **Negotiate better salaries**\n🎯 **Create personalized roadmaps**\n\nI give real, actionable advice - not just generic tips! What career challenge can I help you tackle today?",
       isBot: true,
       timestamp: new Date(),
       suggestions: [
@@ -83,19 +83,143 @@ const Chatbot = () => {
   const generateResponse = (input: string) => {
     const lowerInput = input.toLowerCase();
     
-    if (lowerInput.includes('skill') || lowerInput.includes('learn')) {
-      return "Great question! Based on current market trends, I'd recommend focusing on these high-demand skills: React.js for frontend development, Python for data analysis, and cloud computing with AWS. These skills are showing 25-30% growth in job postings. Would you like me to create a personalized learning path for any of these?";
+    if (lowerInput.includes('ml') || lowerInput.includes('machine learning') || lowerInput.includes('ai engineer')) {
+      return `**🚀 Awesome choice!** ML Engineering is one of the hottest fields right now! Here's your complete roadmap:
+
+**📚 Phase 1: Foundation (3-4 months)**
+• **Mathematics**: Linear Algebra, Statistics, Calculus
+• **Programming**: Python (NumPy, Pandas, Matplotlib)
+• **Tools**: Jupyter Notebooks, Git
+
+**🧠 Phase 2: Core ML (4-5 months)** 
+• **Algorithms**: Supervised/Unsupervised Learning
+• **Libraries**: Scikit-learn, TensorFlow/PyTorch
+• **Deep Learning**: Neural Networks, CNNs, RNNs
+• **Practice**: Kaggle competitions, personal projects
+
+**⚡ Phase 3: MLOps & Production (3-4 months)**
+• **Deployment**: Docker, Kubernetes, Cloud (AWS/GCP)
+• **MLOps**: MLflow, Airflow, Model Monitoring  
+• **Databases**: SQL, NoSQL for big data
+
+**💰 Salary Range**: $95k - $180k+ (senior roles)
+**🔥 Growth**: +35% job demand this year!
+
+**Free Resources**: Andrew Ng's ML Course, Kaggle Learn
+**Paid**: Deep Learning Specialization, MLOps courses
+
+Want me to create a personalized timeline based on your current background? 🎯`;
+    }
+    
+    if (lowerInput.includes('frontend') || lowerInput.includes('web dev') || lowerInput.includes('react')) {
+      return `**🎨 Frontend Development is perfect for creative problem-solvers!** Here's your path to success:
+
+**🏗️ Phase 1: Web Fundamentals (2-3 months)**
+• **HTML5**: Semantic markup, accessibility  
+• **CSS3**: Flexbox, Grid, animations, responsive design
+• **JavaScript**: ES6+, DOM manipulation, async/await
+• **Tools**: VS Code, Git/GitHub, Chrome DevTools
+
+**⚛️ Phase 2: React Ecosystem (3-4 months)**
+• **React**: Components, hooks, state management
+• **TypeScript**: Type safety, better code quality
+• **Styling**: Styled-components, Tailwind CSS
+• **State**: Redux/Zustand for complex apps
+
+**🚀 Phase 3: Advanced & Production (2-3 months)**
+• **Frameworks**: Next.js for full-stack apps
+• **Testing**: Jest, Cypress for reliable code
+• **Performance**: Code splitting, lazy loading
+• **Deployment**: Vercel, Netlify, CI/CD
+
+**💰 Salary Range**: $70k - $130k+ (senior roles)  
+**📈 Growth**: +23% increase in job postings!
+
+**Free Resources**: freeCodeCamp, React docs, MDN
+**Paid**: Epic React, Frontend Masters
+
+Ready to start building amazing user experiences? Let me know your current level! 💪`;
     }
     
     if (lowerInput.includes('salary') || lowerInput.includes('negotiate')) {
-      return "Salary negotiation is crucial for career growth! Research shows that people who negotiate their first salary can earn over $1M more during their career. I recommend researching market rates, documenting your achievements, and practicing your pitch. The average tech salary has increased 8% this year. Would you like tips for your specific role?";
+      return `**💰 Salary negotiation is a GAME CHANGER!** Here's how to master it:
+
+**📊 Research Phase:**
+• **Use tools**: Glassdoor, levels.fyi, Payscale
+• **Network**: Ask peers in similar roles (anonymously)  
+• **Location matters**: SF/NYC vs other cities = 20-40% difference
+
+**💪 Build Your Case:**
+• **Document wins**: Quantify your achievements with numbers
+• **Market rate**: "Based on my research, similar roles pay $X-Y"
+• **Unique value**: What makes you special vs other candidates?
+
+**🎯 Negotiation Strategy:**
+• **Timing**: After job offer, before accepting
+• **Be enthusiastic**: "I'm excited about this role AND..."
+• **Ask for time**: "Can I have 24-48 hours to review?"
+• **Bundle**: Salary + benefits + equity + PTO
+
+**🔥 Pro Tips:**
+• People who negotiate earn **$1M+ more** over their career
+• **Women**: Practice saying numbers out loud (confidence boost!)
+• **New grads**: Still negotiate! Even 5-10% adds up
+
+**💡 Sample script**: "I'm thrilled about joining the team! Based on my research and experience with [specific skills], I was hoping we could discuss a salary of $X. Is there flexibility there?"
+
+Want me to help you prepare for a specific negotiation? Share your situation! 🚀`;
     }
     
-    if (lowerInput.includes('transition') || lowerInput.includes('change')) {
-      return "Career transitions can be exciting! The key is to identify transferable skills and bridge any gaps through targeted learning. Many successful transitions happen by leveraging existing skills in new contexts. What's your current role and where would you like to move?";
+    if (lowerInput.includes('transition') || lowerInput.includes('change') || lowerInput.includes('switch')) {
+      return `**🔄 Career transitions are exciting opportunities!** Here's your strategic approach:
+
+**🎯 Step 1: Skills Audit (Week 1-2)**
+• **Map current skills**: What transferable skills do you have?
+• **Identify gaps**: What's missing for your target role?
+• **Quick wins**: Skills you can learn in 30-90 days
+
+**📚 Step 2: Strategic Learning (Month 1-3)**
+• **Focus on high-impact skills**: Don't try to learn everything
+• **Build projects**: Portfolio > Certificates  
+• **Network actively**: LinkedIn, industry events, informational interviews
+
+**🚀 Step 3: Transition Strategy**
+• **Internal moves**: Easier path if possible
+• **Freelance/Side projects**: Build experience gradually
+• **Bootcamps/Courses**: Intensive learning + network
+
+**✅ Success Examples:**
+• Teacher → Data Scientist (via Python + statistics)
+• Marketing → Product Manager (via analytics + user research)  
+• Sales → Software Engineer (via coding bootcamp)
+
+**🔥 Hot Transition Paths Right Now:**
+• Any field → **Data/AI roles** (huge demand!)
+• Traditional roles → **Remote-first careers**
+• Corporate → **Freelance/Consulting**
+
+**💡 Remember**: Your unique background is an ASSET, not a limitation. Different perspectives are valued!
+
+What's your current role and dream destination? Let me create a custom transition plan! 🎯`;
     }
     
-    return "I understand you're looking for career guidance. Based on your query, I'd suggest focusing on building relevant skills, networking with professionals in your target field, and creating a strong online presence. What specific aspect of your career development would you like to explore further?";
+    return `Hey there! 👋 I'm here to be your **personal career strategist**! 
+
+Whether you're looking to:
+🚀 **Break into tech** (I love helping with this!)
+📈 **Level up your current role**  
+💰 **Negotiate better compensation**
+🔄 **Make a career pivot**
+
+I've got you covered with **real, actionable advice** - not just generic tips!
+
+**What's on your mind today?** Share your:
+• Current situation
+• Career goals  
+• Biggest challenges
+• Timeline for change
+
+Let's craft a plan that actually works for YOU! 💪✨`;
   };
 
   const generateSuggestions = (input: string) => {
@@ -159,7 +283,7 @@ const Chatbot = () => {
             <Sparkles className="w-6 h-6 text-primary-foreground" />
           </div>
           <div>
-            <h1 className="text-3xl font-bold text-foreground">AI Career Chat</h1>
+            <h1 className="text-3xl font-bold text-foreground">CareerCraft AI Chat</h1>
             <p className="text-muted-foreground">Get personalized career advice powered by AI</p>
           </div>
         </div>
@@ -200,7 +324,15 @@ const Chatbot = () => {
                         : 'bg-primary text-primary-foreground'
                     }`}
                   >
-                    <p className="text-sm leading-relaxed">{message.content}</p>
+                    <div 
+                      className="text-sm leading-relaxed whitespace-pre-line"
+                      dangerouslySetInnerHTML={{
+                        __html: message.content
+                          .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                          .replace(/\*(.*?)\*/g, '<em>$1</em>')
+                          .replace(/•/g, '&bull;')
+                      }}
+                    />
                   </div>
                   
                   {message.suggestions && (
