@@ -1,4 +1,4 @@
-import { Outlet, NavLink } from "react-router-dom";
+import { Outlet, NavLink, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { 
   LayoutDashboard, 
@@ -13,13 +13,16 @@ import { useState } from "react";
 
 const Layout = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const isLandingPage = location.pathname === '/';
 
-  const navigation = [
+  // Only show navigation for non-landing pages (signed-in users)
+  const navigation = !isLandingPage ? [
     { name: 'Dashboard', href: '/', icon: LayoutDashboard },
     { name: 'AI Chat', href: '/chat', icon: MessageCircle },
     { name: 'Skills Analysis', href: '/skills', icon: Target },
     { name: 'Profile', href: '/profile', icon: User },
-  ];
+  ] : [];
 
   const getLinkStyles = ({ isActive }: { isActive: boolean }) => 
     `flex items-center gap-3 px-4 py-3 rounded-lg transition-smooth font-medium ${
@@ -45,15 +48,17 @@ const Layout = () => {
               </div>
             </div>
 
-            {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center gap-1">
-              {navigation.map((item) => (
-                <NavLink key={item.name} to={item.href} className={getLinkStyles} end>
-                  <item.icon className="w-5 h-5" />
-                  <span>{item.name}</span>
-                </NavLink>
-              ))}
-            </nav>
+            {/* Desktop Navigation - Only show for non-landing pages */}
+            {!isLandingPage && (
+              <nav className="hidden md:flex items-center gap-1">
+                {navigation.map((item) => (
+                  <NavLink key={item.name} to={item.href} className={getLinkStyles} end>
+                    <item.icon className="w-5 h-5" />
+                    <span>{item.name}</span>
+                  </NavLink>
+                ))}
+              </nav>
+            )}
 
             {/* Auth Button */}
             <div className="flex items-center gap-3">
@@ -74,8 +79,8 @@ const Layout = () => {
             </div>
           </div>
 
-          {/* Mobile Navigation */}
-          {mobileMenuOpen && (
+          {/* Mobile Navigation - Only show for non-landing pages */}
+          {mobileMenuOpen && !isLandingPage && (
             <div className="md:hidden border-t border-border bg-card">
               <nav className="py-4 space-y-2">
                 {navigation.map((item) => (
