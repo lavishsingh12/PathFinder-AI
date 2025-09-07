@@ -231,10 +231,6 @@ const Index = () => {
             View Demo
           </Button>
         </div>
-        
-        <p className="text-sm text-muted-foreground mt-6 bg-secondary/30 px-4 py-2 rounded-lg inline-block">
-          💡 Login or Sign Up for more personalized career advice and save your progress
-        </p>
       </div>
 
       {/* Trending Skills Section */}
