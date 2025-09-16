@@ -28,13 +28,53 @@ const SkillAnalysis = () => {
   const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (file) {
+      if (file.size > 20 * 1024 * 1024) { // 20MB limit
+        toast({
+          title: "File too large",
+          description: "Please select a file smaller than 20MB.",
+          variant: "destructive",
+        });
+        return;
+      }
+
+      if (!file.name.toLowerCase().match(/\.(pdf|doc|docx)$/)) {
+        toast({
+          title: "Invalid file type",
+          description: "Please upload a PDF, DOC, or DOCX file.",
+          variant: "destructive",
+        });
+        return;
+      }
+
       toast({
-        title: "File uploaded",
-        description: `${file.name} has been uploaded successfully.`,
+        title: "File uploaded successfully",
+        description: `${file.name} has been uploaded and is being processed...`,
       });
-      // Simulate file processing
-      setCurrentSkills("React.js, JavaScript, CSS, HTML, Git, MongoDB, Node.js, TypeScript");
+      
+      // Simulate AI processing of the resume
+      setTimeout(() => {
+        const extractedSkills = extractSkillsFromFileName(file.name);
+        setCurrentSkills(extractedSkills);
+        toast({
+          title: "Resume processed",
+          description: "Skills have been extracted from your resume.",
+        });
+      }, 2000);
     }
+  };
+
+  const extractSkillsFromFileName = (fileName: string) => {
+    // Simulate skill extraction based on common resume content
+    const commonSkillSets = [
+      "React.js, JavaScript, CSS, HTML, Git, MongoDB, Node.js, TypeScript",
+      "Python, Django, PostgreSQL, Docker, AWS, REST APIs, Git, Linux",
+      "Java, Spring Boot, MySQL, Jenkins, Kubernetes, Microservices, Git",
+      "Machine Learning, Python, TensorFlow, Pandas, SQL, Statistics, Jupyter",
+      "PHP, Laravel, MySQL, Vue.js, Git, Apache, Linux",
+      "C#, .NET, SQL Server, Azure, Git, Visual Studio, Entity Framework"
+    ];
+    
+    return commonSkillSets[Math.floor(Math.random() * commonSkillSets.length)];
   };
 
   const handleAnalyze = () => {
