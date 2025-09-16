@@ -19,7 +19,17 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['Inter', 'system-ui', 'sans-serif'],
+				sans: [
+					"Arial",
+					"Calibri", 
+					"ui-sans-serif",
+					"system-ui",
+					"sans-serif",
+					"Apple Color Emoji",
+					"Segoe UI Emoji",
+					"Segoe UI Symbol",
+					"Noto Color Emoji",
+				],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

@@ -255,65 +255,6 @@ const Dashboard = () => {
         </Button>
       </div>
 
-      {/* Stats Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-        <Card className="shadow-soft">
-          <CardContent className="p-6">
-            <div className="flex items-center gap-3">
-              <div className="p-2 bg-success-light rounded-lg">
-                <Award className="w-6 h-6 text-success" />
-              </div>
-              <div>
-                <p className="text-2xl font-bold text-foreground">12</p>
-                <p className="text-sm text-muted-foreground">Skills Mastered</p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        <Card className="shadow-soft">
-          <CardContent className="p-6">
-            <div className="flex items-center gap-3">
-              <div className="p-2 bg-primary-light rounded-lg">
-                <Target className="w-6 h-6 text-primary" />
-              </div>
-              <div>
-                <p className="text-2xl font-bold text-foreground">85%</p>
-                <p className="text-sm text-muted-foreground">Career Match</p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        <Card className="shadow-soft">
-          <CardContent className="p-6">
-            <div className="flex items-center gap-3">
-              <div className="p-2 bg-accent-light rounded-lg">
-                <Clock className="w-6 h-6 text-accent" />
-              </div>
-              <div>
-                <p className="text-2xl font-bold text-foreground">24h</p>
-                <p className="text-sm text-muted-foreground">Learning Time</p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        <Card className="shadow-soft">
-          <CardContent className="p-6">
-            <div className="flex items-center gap-3">
-              <div className="p-2 bg-warning-light rounded-lg">
-                <Users className="w-6 h-6 text-warning" />
-              </div>
-              <div>
-                <p className="text-2xl font-bold text-foreground">3</p>
-                <p className="text-sm text-muted-foreground">Active Goals</p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
-
       <div className="lg:col-span-full">
         {/* Career Paths Explorer */}
         <Card className="shadow-medium">
