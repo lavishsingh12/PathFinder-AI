@@ -26,8 +26,10 @@ import {
   DollarSign,
   MapPin,
   Play,
-  ExternalLink
+  ExternalLink,
+  Zap
 } from "lucide-react";
+import CertificationHub from "@/components/CertificationHub";
 
 const Dashboard = () => {
   const [selectedCareer, setSelectedCareer] = useState<any>(null);
@@ -217,29 +219,7 @@ const Dashboard = () => {
     { name: "Data Analysis", demand: "Medium", growth: "+22%" }
   ];
 
-  const recommendations = [
-    {
-      type: "Course",
-      title: "Advanced React Patterns",
-      provider: "TechEd Pro",
-      duration: "12 weeks",
-      rating: 4.8
-    },
-    {
-      type: "Job",
-      title: "Frontend Developer at TechCorp",
-      provider: "LinkedIn",
-      duration: "Full-time",
-      rating: 4.5
-    },
-    {
-      type: "Course",
-      title: "AWS Cloud Practitioner",
-      provider: "AWS Training",
-      duration: "8 weeks",
-      rating: 4.9
-    }
-  ];
+  // Removed recommendations - replaced with CertificationHub
 
   return (
     <div className="space-y-8 animate-fade-in">
@@ -255,64 +235,7 @@ const Dashboard = () => {
         </Button>
       </div>
 
-      {/* Stats Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-        <Card className="shadow-soft">
-          <CardContent className="p-6">
-            <div className="flex items-center gap-3">
-              <div className="p-2 bg-success-light rounded-lg">
-                <Award className="w-6 h-6 text-success" />
-              </div>
-              <div>
-                <p className="text-2xl font-bold text-foreground">12</p>
-                <p className="text-sm text-muted-foreground">Skills Mastered</p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        <Card className="shadow-soft">
-          <CardContent className="p-6">
-            <div className="flex items-center gap-3">
-              <div className="p-2 bg-primary-light rounded-lg">
-                <Target className="w-6 h-6 text-primary" />
-              </div>
-              <div>
-                <p className="text-2xl font-bold text-foreground">85%</p>
-                <p className="text-sm text-muted-foreground">Career Match</p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        <Card className="shadow-soft">
-          <CardContent className="p-6">
-            <div className="flex items-center gap-3">
-              <div className="p-2 bg-accent-light rounded-lg">
-                <Clock className="w-6 h-6 text-accent" />
-              </div>
-              <div>
-                <p className="text-2xl font-bold text-foreground">24h</p>
-                <p className="text-sm text-muted-foreground">Learning Time</p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        <Card className="shadow-soft">
-          <CardContent className="p-6">
-            <div className="flex items-center gap-3">
-              <div className="p-2 bg-warning-light rounded-lg">
-                <Users className="w-6 h-6 text-warning" />
-              </div>
-              <div>
-                <p className="text-2xl font-bold text-foreground">3</p>
-                <p className="text-sm text-muted-foreground">Active Goals</p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
+      {/* Remove stats cards - as requested */}
 
       <div className="lg:col-span-full">
         {/* Career Paths Explorer */}
@@ -451,48 +374,40 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {/* Recommendations */}
+      {/* Trending Skills Section */}
       <Card className="shadow-medium">
         <CardHeader>
-          <CardTitle className="flex items-center gap-2">
-            <Star className="w-5 h-5 text-accent" />
-            Recommended for You
+          <CardTitle className="flex items-center gap-2 text-center justify-center">
+            <Zap className="w-5 h-5 text-accent" />
+            Trending Skills
           </CardTitle>
-          <CardDescription>
-            Courses and job opportunities tailored to your profile
+          <CardDescription className="text-center">
+            Most in-demand skills this month
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {recommendations.map((item, index) => (
+          <div className="flex flex-wrap justify-center gap-4">
+            {trendingSkills.map((skill, index) => (
               <div 
                 key={index}
-                className="p-4 border border-border rounded-lg hover:shadow-soft transition-smooth"
+                className="flex items-center gap-3 p-4 border border-border rounded-lg hover:shadow-soft transition-smooth bg-gradient-card"
               >
-                <div className="flex items-center gap-2 mb-2">
-                  {item.type === 'Course' ? (
-                    <BookOpen className="w-4 h-4 text-primary" />
-                  ) : (
-                    <Briefcase className="w-4 h-4 text-accent" />
-                  )}
-                  <Badge variant="outline" className="text-xs">
-                    {item.type}
+                <div className="text-center">
+                  <h3 className="font-semibold text-foreground">{skill.name}</h3>
+                  <p className="text-sm text-muted-foreground">{skill.demand} Demand</p>
+                  <Badge variant="secondary" className="mt-1 text-success bg-success/10">
+                    <TrendingUp className="w-3 h-3 mr-1" />
+                    {skill.growth}
                   </Badge>
-                </div>
-                <h3 className="font-semibold text-foreground mb-1">{item.title}</h3>
-                <p className="text-sm text-muted-foreground mb-2">{item.provider}</p>
-                <div className="flex justify-between items-center">
-                  <span className="text-xs text-muted-foreground">{item.duration}</span>
-                  <div className="flex items-center gap-1">
-                    <Star className="w-3 h-3 text-accent fill-current" />
-                    <span className="text-xs font-medium">{item.rating}</span>
-                  </div>
                 </div>
               </div>
             ))}
           </div>
         </CardContent>
       </Card>
+
+      {/* Certification Hub */}
+      <CertificationHub />
 
       {/* Career Detail Modal */}
       <Dialog open={!!selectedCareer} onOpenChange={() => setSelectedCareer(null)}>

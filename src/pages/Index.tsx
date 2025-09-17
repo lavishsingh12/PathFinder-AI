@@ -211,15 +211,35 @@ const Index = () => {
           <div className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center">
             <Sparkles className="w-6 h-6 text-primary-foreground" />
           </div>
-          <h1 className="text-4xl font-bold text-foreground">CareerCraft AI</h1>
+          <h1 className="text-4xl font-bold text-foreground">CareerAI</h1>
         </div>
         
         <h2 className="text-5xl font-bold text-foreground mb-6">
-          Shape Your <span className="text-primary">Future Career</span>
+          Transform Your <span className="text-primary">Career</span> Today
         </h2>
         <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-          Get personalized career guidance, skill roadmaps, and AI-powered insights to accelerate your professional growth.
+          AI-Powered Personalized Career & Skills Advisor - Discover your ideal career path with personalized recommendations
         </p>
+        
+        {/* Stats Section */}
+        <div className="flex justify-center gap-8 mb-8 flex-wrap">
+          <div className="text-center">
+            <div className="text-3xl font-bold text-primary">500K+</div>
+            <div className="text-sm text-muted-foreground">Career Paths</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl font-bold text-primary">2M+</div>
+            <div className="text-sm text-muted-foreground">Students Guided</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl font-bold text-primary">95%</div>
+            <div className="text-sm text-muted-foreground">Success Rate</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl font-bold text-primary">1000+</div>
+            <div className="text-sm text-muted-foreground">Companies</div>
+          </div>
+        </div>
         
         <div className="flex gap-4 justify-center">
           <Link to="/chat">
