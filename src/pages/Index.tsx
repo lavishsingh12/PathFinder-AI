@@ -207,49 +207,46 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <div className="container mx-auto px-4 pt-20 pb-16 text-center">
-        <div className="flex items-center justify-center gap-3 mb-6">
-          <div className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center">
-            <Sparkles className="w-6 h-6 text-primary-foreground" />
+        <div className="flex items-center justify-center gap-3 mb-8">
+          <div className="w-16 h-16 rounded-full bg-gradient-primary flex items-center justify-center">
+            <Sparkles className="w-8 h-8 text-primary-foreground" />
           </div>
-          <h1 className="text-4xl font-bold text-foreground">CareerAI</h1>
+          <h1 className="text-6xl font-bold text-foreground">CareerAI</h1>
         </div>
         
-        <h2 className="text-5xl font-bold text-foreground mb-6">
-          Transform Your <span className="text-primary">Career</span> Today
+        <h2 className="text-4xl font-bold text-foreground mb-6">
+          Your Personalized AI Career Advisor
         </h2>
-        <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-          AI-Powered Personalized Career & Skills Advisor - Discover your ideal career path with personalized recommendations
+        <p className="text-xl text-muted-foreground mb-12 max-w-4xl mx-auto">
+          Navigate your career journey with intelligent insights, personalized skill mapping, and 
+          real-time job market analysis designed specifically for Indian students.
         </p>
         
-        {/* Stats Section */}
-        <div className="flex justify-center gap-8 mb-8 flex-wrap">
-          <div className="text-center">
-            <div className="text-3xl font-bold text-primary">500K+</div>
-            <div className="text-sm text-muted-foreground">Career Paths</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-primary">2M+</div>
-            <div className="text-sm text-muted-foreground">Students Guided</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-primary">95%</div>
-            <div className="text-sm text-muted-foreground">Success Rate</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-primary">1000+</div>
-            <div className="text-sm text-muted-foreground">Companies</div>
-          </div>
-        </div>
-        
-        <div className="flex gap-4 justify-center">
+        <div className="flex gap-6 justify-center mb-16">
           <Link to="/chat">
-            <Button size="lg" className="text-lg px-8">
-              Start Your Journey <ArrowRight className="ml-2 w-5 h-5" />
+            <Button size="lg" className="text-lg px-8 py-4 h-auto">
+              Start Your Career Journey
             </Button>
           </Link>
-          <Button variant="outline" size="lg" className="text-lg px-8">
-            View Demo
+          <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto">
+            Explore Career Paths
           </Button>
+        </div>
+        
+        {/* Stats Cards */}
+        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <Card className="p-8 text-center bg-card/50 backdrop-blur">
+            <div className="text-4xl font-bold text-primary mb-2">100K+</div>
+            <div className="text-lg text-muted-foreground">AI Career Matches</div>
+          </Card>
+          <Card className="p-8 text-center bg-card/50 backdrop-blur">
+            <div className="text-4xl font-bold text-primary mb-2">25+</div>
+            <div className="text-lg text-muted-foreground">Industry Sectors</div>
+          </Card>
+          <Card className="p-8 text-center bg-card/50 backdrop-blur">
+            <div className="text-4xl font-bold text-primary mb-2">1M+</div>
+            <div className="text-lg text-muted-foreground">Skills Analyzed</div>
+          </Card>
         </div>
       </div>
 

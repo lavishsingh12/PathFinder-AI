@@ -30,8 +30,10 @@ import {
   Zap
 } from "lucide-react";
 import CertificationHub from "@/components/CertificationHub";
+import CareerAssessment from "@/components/CareerAssessment";
 
 const Dashboard = () => {
+  const [showAssessment, setShowAssessment] = useState(false);
   const [selectedCareer, setSelectedCareer] = useState<any>(null);
   const [selectedCategory, setSelectedCategory] = useState("All");
 
@@ -229,7 +231,7 @@ const Dashboard = () => {
           <h1 className="text-3xl font-bold text-foreground">Welcome back!</h1>
           <p className="text-muted-foreground">Let's advance your career today</p>
         </div>
-        <Button className="bg-gradient-primary">
+        <Button className="bg-gradient-primary" onClick={() => setShowAssessment(true)}>
           <Target className="w-4 h-4 mr-2" />
           Take Assessment
         </Button>
@@ -507,6 +509,11 @@ const Dashboard = () => {
           )}
         </DialogContent>
       </Dialog>
+
+      {/* Career Assessment Modal */}
+      {showAssessment && (
+        <CareerAssessment onClose={() => setShowAssessment(false)} />
+      )}
     </div>
   );
 };
