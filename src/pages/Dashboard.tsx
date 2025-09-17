@@ -336,44 +336,6 @@ const Dashboard = () => {
         </Card>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        {/* Spacer for layout */}
-        <div className="lg:col-span-2"></div>
-
-        {/* Trending Skills */}
-        <div>
-          <Card className="shadow-medium">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <TrendingUp className="w-5 h-5 text-accent" />
-                Trending Skills
-              </CardTitle>
-              <CardDescription>
-                High-demand skills in your field
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              {trendingSkills.map((skill, index) => (
-                <div key={index} className="flex justify-between items-center">
-                  <div>
-                    <p className="font-medium text-foreground">{skill.name}</p>
-                    <p className="text-sm text-muted-foreground">
-                      {skill.demand} demand
-                    </p>
-                  </div>
-                  <Badge 
-                    variant={skill.growth.startsWith('+') ? 'default' : 'secondary'}
-                    className="bg-success-light text-success"
-                  >
-                    {skill.growth}
-                  </Badge>
-                </div>
-              ))}
-            </CardContent>
-          </Card>
-        </div>
-      </div>
-
       {/* Trending Skills Section */}
       <Card className="shadow-medium">
         <CardHeader>
