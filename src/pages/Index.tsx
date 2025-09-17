@@ -16,7 +16,6 @@ import {
   BarChart3
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import CertificationHub from "@/components/CertificationHub";
 
 interface Skill {
   id: string;
@@ -212,41 +211,25 @@ const Index = () => {
           <div className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center">
             <Sparkles className="w-6 h-6 text-primary-foreground" />
           </div>
-          <h1 className="text-4xl font-bold text-foreground">CareerAI</h1>
+          <h1 className="text-4xl font-bold text-foreground">CareerCraft AI</h1>
         </div>
         
-        <h2 className="text-5xl font-bold text-foreground mb-4">
-          Your Personalized AI Career Advisor
+        <h2 className="text-5xl font-bold text-foreground mb-6">
+          Shape Your <span className="text-primary">Future Career</span>
         </h2>
-        <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-          Navigate your career journey with intelligent insights, personalized skill mapping, and real-time job market analysis designed specifically for Indian students.
+        <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          Get personalized career guidance, skill roadmaps, and AI-powered insights to accelerate your professional growth.
         </p>
         
         <div className="flex gap-4 justify-center">
-          <Button size="lg" className="text-lg px-8 bg-black text-white hover:bg-black/90">
-            Start Your Career Journey
-          </Button>
+          <Link to="/chat">
+            <Button size="lg" className="text-lg px-8">
+              Start Your Journey <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+          </Link>
           <Button variant="outline" size="lg" className="text-lg px-8">
-            Explore Career Paths
+            View Demo
           </Button>
-        </div>
-      </div>
-
-      {/* Stats Section */}
-      <div className="container mx-auto px-4 pb-16">
-        <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          <Card className="p-8 text-center bg-card/50 backdrop-blur-sm">
-            <div className="text-4xl font-bold text-foreground mb-2">100K+</div>
-            <div className="text-muted-foreground">AI Career Matches</div>
-          </Card>
-          <Card className="p-8 text-center bg-card/50 backdrop-blur-sm">
-            <div className="text-4xl font-bold text-foreground mb-2">25+</div>
-            <div className="text-muted-foreground">Industry Sectors</div>
-          </Card>
-          <Card className="p-8 text-center bg-card/50 backdrop-blur-sm">
-            <div className="text-4xl font-bold text-foreground mb-2">1M+</div>
-            <div className="text-muted-foreground">Skills Analyzed</div>
-          </Card>
         </div>
       </div>
 
@@ -262,12 +245,11 @@ const Index = () => {
           </p>
         </div>
 
-        {/* Horizontal scrolling trending skills */}
-        <div className="flex overflow-x-auto gap-4 pb-4 mb-12 scrollbar-hide">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {trendingSkills.map((skill) => (
             <Card 
               key={skill.id}
-              className="min-w-[280px] p-6 cursor-pointer hover:shadow-medium transition-smooth group flex-shrink-0"
+              className="p-6 cursor-pointer hover:shadow-medium transition-smooth group"
               onClick={() => setSelectedSkill(skill)}
             >
               <div className="flex items-center gap-3 mb-4">
@@ -381,25 +363,32 @@ const Index = () => {
         )}
       </div>
 
-      {/* Certification Hub */}
-      <CertificationHub />
-
-      {/* Login CTA Section */}
+      {/* Features Section */}
       <div className="bg-secondary/30 py-16">
-        <div className="container mx-auto px-4 text-center">
-          <div className="max-w-2xl mx-auto">
-            <h3 className="text-3xl font-bold text-foreground mb-4">Ready to Transform Your Career?</h3>
-            <p className="text-muted-foreground text-lg mb-8">
-              Login or Sign Up for more personalized career advice tailored to your unique goals and background
-            </p>
-            <div className="flex gap-4 justify-center">
-              <Button size="lg" className="text-lg px-8">
-                Login
-              </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8">
-                Sign Up
-              </Button>
-            </div>
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-foreground mb-4">Why Choose CareerCraft AI?</h3>
+            <p className="text-muted-foreground text-lg">Powered by AI to give you the most relevant career insights</p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="p-6 text-center">
+              <Brain className="w-12 h-12 text-primary mx-auto mb-4" />
+              <h4 className="text-xl font-semibold text-foreground mb-2">AI-Powered Insights</h4>
+              <p className="text-muted-foreground">Get personalized career advice from our advanced AI assistant</p>
+            </Card>
+            
+            <Card className="p-6 text-center">
+              <TrendingUp className="w-12 h-12 text-primary mx-auto mb-4" />
+              <h4 className="text-xl font-semibold text-foreground mb-2">Real-Time Market Data</h4>
+              <p className="text-muted-foreground">Access up-to-date job market trends and salary information</p>
+            </Card>
+            
+            <Card className="p-6 text-center">
+              <Sparkles className="w-12 h-12 text-primary mx-auto mb-4" />
+              <h4 className="text-xl font-semibold text-foreground mb-2">Personalized Roadmaps</h4>
+              <p className="text-muted-foreground">Get custom learning paths tailored to your goals</p>
+            </Card>
           </div>
         </div>
       </div>
