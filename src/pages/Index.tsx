@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { 
   ArrowRight, 
-  Sparkles, 
+  Compass, 
   TrendingUp,
   Code,
   Database,
@@ -209,7 +209,7 @@ const Index = () => {
       <div className="container mx-auto px-4 pt-16 pb-12 text-center">
         <div className="flex items-center justify-center gap-4 mb-6">
           <div className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center">
-            <Sparkles className="w-6 h-6 text-primary-foreground" />
+            <Compass className="w-6 h-6 text-primary-foreground" />
           </div>
           <h1 className="text-5xl font-bold text-foreground">PathFinder AI</h1>
         </div>
@@ -402,7 +402,7 @@ const Index = () => {
             </Card>
             
             <Card className="p-6 text-center">
-              <Sparkles className="w-12 h-12 text-primary mx-auto mb-4" />
+              <Compass className="w-12 h-12 text-primary mx-auto mb-4" />
               <h4 className="text-xl font-semibold text-foreground mb-2">Personalized Roadmaps</h4>
               <p className="text-muted-foreground">Get custom learning paths tailored to your goals</p>
             </Card>

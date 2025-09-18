@@ -7,7 +7,8 @@ import {
   User, 
   LogIn,
   Menu,
-  X
+  X,
+  Compass
 } from "lucide-react";
 import { useState } from "react";
 
@@ -37,7 +38,7 @@ const Layout = () => {
             {/* Logo */}
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-lg bg-gradient-primary flex items-center justify-center">
-                <Target className="w-6 h-6 text-primary-foreground" />
+                <Compass className="w-6 h-6 text-primary-foreground" />
               </div>
               <div className="hidden sm:block">
                 <h1 className="text-xl font-bold text-foreground">PathFinder AI</h1>
