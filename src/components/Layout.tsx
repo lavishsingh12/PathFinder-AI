@@ -40,7 +40,7 @@ const Layout = () => {
                 <Target className="w-6 h-6 text-primary-foreground" />
               </div>
               <div className="hidden sm:block">
-                <h1 className="text-xl font-bold text-foreground">CareerCraft AI</h1>
+                <h1 className="text-xl font-bold text-foreground">PathFinder AI</h1>
                 <p className="text-xs text-muted-foreground">Career & Skills Advisor</p>
               </div>
             </div>
