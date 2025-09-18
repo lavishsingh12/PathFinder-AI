@@ -211,7 +211,7 @@ const Index = () => {
           <div className="w-16 h-16 rounded-full bg-gradient-primary flex items-center justify-center">
             <Sparkles className="w-8 h-8 text-primary-foreground" />
           </div>
-          <h1 className="text-6xl font-bold text-foreground">CareerAI</h1>
+          <h1 className="text-6xl font-bold text-foreground">PathFinder AI</h1>
         </div>
         
         <h2 className="text-4xl font-bold text-foreground mb-6">
@@ -384,7 +384,7 @@ const Index = () => {
       <div className="bg-secondary/30 py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-foreground mb-4">Why Choose CareerCraft AI?</h3>
+            <h3 className="text-3xl font-bold text-foreground mb-4">Why Choose PathFinder AI?</h3>
             <p className="text-muted-foreground text-lg">Powered by AI to give you the most relevant career insights</p>
           </div>
           

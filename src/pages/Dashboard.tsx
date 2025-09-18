@@ -206,9 +206,121 @@ const Dashboard = () => {
       videos: [
         { title: "UX Design Full Course", channel: "DesignCourse", duration: "6 hours" },
         { title: "Figma Tutorial", channel: "Flux", duration: "4 hours" }
-      ]
-    }
-  ];
+       ]
+     },
+     {
+       id: 7,
+       title: "Full Stack Developer",
+       category: "BCA/MCA",
+       icon: Code,
+       salary: "₹5-25 LPA",
+       experience: "0-4 years",
+       location: "Bangalore, Pune, Chennai",
+       rating: 4.7,
+       openings: "22K+ openings",
+       trending: true,
+       description: "Develop both frontend and backend components of web applications using modern technologies.",
+       skills: ["JavaScript", "React", "Node.js", "MongoDB", "Express", "Git", "AWS"],
+       roadmap: [
+         { phase: "Frontend Basics", duration: "2-3 months", skills: ["HTML", "CSS", "JavaScript"] },
+         { phase: "Backend Development", duration: "3-4 months", skills: ["Node.js", "Express", "MongoDB"] },
+         { phase: "Full Stack Integration", duration: "2-3 months", skills: ["REST APIs", "Authentication", "Deployment"] },
+         { phase: "Advanced Topics", duration: "2-3 months", skills: ["Microservices", "DevOps", "System Design"] }
+       ],
+       courses: [
+         { name: "Full Stack Web Development", provider: "Coursera", price: "$49/month", rating: 4.8, link: "https://coursera.org" },
+         { name: "MEAN Stack Course", provider: "Udemy", price: "$99", rating: 4.7, link: "https://udemy.com" }
+       ],
+       videos: [
+         { title: "Full Stack Development Course", channel: "freeCodeCamp", duration: "10 hours" },
+         { title: "MERN Stack Tutorial", channel: "Traversy Media", duration: "8 hours" }
+       ]
+     },
+     {
+       id: 8,
+       title: "Database Administrator",
+       category: "BCA/MCA",
+       icon: Database,
+       salary: "₹6-22 LPA",
+       experience: "1-5 years",
+       location: "Mumbai, Delhi, Bangalore",
+       rating: 4.5,
+       openings: "8K+ openings",
+       trending: false,
+       description: "Manage and maintain database systems ensuring data security, performance, and availability.",
+       skills: ["SQL", "MySQL", "PostgreSQL", "Oracle", "MongoDB", "Data Modeling", "Backup & Recovery"],
+       roadmap: [
+         { phase: "Database Fundamentals", duration: "2-3 months", skills: ["SQL Basics", "Database Design", "RDBMS Concepts"] },
+         { phase: "Advanced SQL", duration: "2-3 months", skills: ["Complex Queries", "Stored Procedures", "Triggers"] },
+         { phase: "Database Administration", duration: "3-4 months", skills: ["Performance Tuning", "Backup & Recovery", "Security"] },
+         { phase: "Specialized Skills", duration: "2-3 months", skills: ["NoSQL", "Cloud Databases", "Data Warehousing"] }
+       ],
+       courses: [
+         { name: "Database Administration", provider: "Oracle University", price: "$299", rating: 4.6, link: "https://oracle.com" },
+         { name: "SQL for Data Science", provider: "Coursera", price: "$39/month", rating: 4.8, link: "https://coursera.org" }
+       ],
+       videos: [
+         { title: "Database Management Course", channel: "Simplilearn", duration: "6 hours" },
+         { title: "SQL Complete Tutorial", channel: "Derek Banas", duration: "4 hours" }
+       ]
+     },
+     {
+       id: 9,
+       title: "Content Writer",
+       category: "BA/Humanities",
+       icon: Globe,
+       salary: "₹3-15 LPA",
+       experience: "0-4 years",
+       location: "Remote, Mumbai, Delhi",
+       rating: 4.4,
+       openings: "15K+ openings",
+       trending: true,
+       description: "Create engaging written content for websites, blogs, social media, and marketing materials.",
+       skills: ["Creative Writing", "SEO Writing", "Research", "Grammar", "Content Strategy", "Social Media"],
+       roadmap: [
+         { phase: "Writing Fundamentals", duration: "1-2 months", skills: ["Grammar", "Style Guide", "Proofreading"] },
+         { phase: "Digital Writing", duration: "2-3 months", skills: ["SEO Writing", "Blog Writing", "Social Media Content"] },
+         { phase: "Content Strategy", duration: "2-3 months", skills: ["Content Planning", "Analytics", "Brand Voice"] },
+         { phase: "Specialized Writing", duration: "2-3 months", skills: ["Technical Writing", "Copywriting", "Email Marketing"] }
+       ],
+       courses: [
+         { name: "Content Marketing Certification", provider: "HubSpot", price: "Free", rating: 4.7, link: "https://hubspot.com" },
+         { name: "SEO Writing Course", provider: "Udemy", price: "$79", rating: 4.6, link: "https://udemy.com" }
+       ],
+       videos: [
+         { title: "Content Writing Masterclass", channel: "Income School", duration: "3 hours" },
+         { title: "Copywriting Secrets", channel: "Dan Lok", duration: "2 hours" }
+       ]
+     },
+     {
+       id: 10,
+       title: "Digital Marketing Specialist",
+       category: "BA/Humanities",
+       icon: TrendingUp,
+       salary: "₹4-18 LPA",
+       experience: "0-4 years",
+       location: "Mumbai, Delhi, Bangalore",
+       rating: 4.6,
+       openings: "25K+ openings",
+       trending: true,
+       description: "Plan and execute digital marketing campaigns across various online platforms to drive engagement and sales.",
+       skills: ["Google Ads", "Facebook Ads", "SEO", "Analytics", "Email Marketing", "Social Media Marketing"],
+       roadmap: [
+         { phase: "Digital Marketing Basics", duration: "1-2 months", skills: ["Marketing Fundamentals", "Customer Psychology"] },
+         { phase: "Paid Advertising", duration: "2-3 months", skills: ["Google Ads", "Facebook Ads", "Campaign Management"] },
+         { phase: "Organic Marketing", duration: "2-3 months", skills: ["SEO", "Content Marketing", "Social Media Strategy"] },
+         { phase: "Analytics & Optimization", duration: "2-3 months", skills: ["Google Analytics", "A/B Testing", "Conversion Optimization"] }
+       ],
+       courses: [
+         { name: "Google Digital Marketing Course", provider: "Google", price: "Free", rating: 4.8, link: "https://grow.google" },
+         { name: "Digital Marketing Specialization", provider: "Coursera", price: "$49/month", rating: 4.7, link: "https://coursera.org" }
+       ],
+       videos: [
+         { title: "Digital Marketing Full Course", channel: "Simplilearn", duration: "8 hours" },
+         { title: "Facebook Ads Tutorial", channel: "Ben Heath", duration: "4 hours" }
+       ]
+     }
+   ];
 
   const filteredCareers = selectedCategory === "All" 
     ? careerPaths 
