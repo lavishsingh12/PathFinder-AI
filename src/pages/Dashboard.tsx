@@ -92,8 +92,8 @@ const Dashboard = () => {
         { name: "Python for Data Science", provider: "edX", price: "Free", rating: 4.6, link: "https://edx.org" }
       ],
       videos: [
-        { title: "Data Science Full Course", channel: "Simplilearn", duration: "8 hours" },
-        { title: "Machine Learning Explained", channel: "3Blue1Brown", duration: "3 hours" }
+        { title: "Data Science Full Course", channel: "Simplilearn", duration: "8 hours", link: "https://www.youtube.com/watch?v=ua-CiDNNj30" },
+        { title: "Machine Learning Explained", channel: "3Blue1Brown", duration: "3 hours", link: "https://www.youtube.com/watch?v=aircAruvnKk" }
       ]
     },
     {
@@ -120,8 +120,8 @@ const Dashboard = () => {
         { name: "Ethical Hacking Course", provider: "Udemy", price: "$89", rating: 4.7, link: "https://udemy.com" }
       ],
       videos: [
-        { title: "Cybersecurity Full Course", channel: "Professor Messer", duration: "10 hours" },
-        { title: "Ethical Hacking Tutorial", channel: "The Cyber Mentor", duration: "6 hours" }
+        { title: "Cybersecurity Full Course", channel: "Professor Messer", duration: "10 hours", link: "https://www.youtube.com/watch?v=U_P23SqJaDc" },
+        { title: "Ethical Hacking Tutorial", channel: "The Cyber Mentor", duration: "6 hours", link: "https://www.youtube.com/watch?v=3Kq1MIfTWCE" }
       ]
     },
     {
@@ -148,8 +148,8 @@ const Dashboard = () => {
         { name: "React Native Specialization", provider: "Coursera", price: "$39/month", rating: 4.7, link: "https://coursera.org" }
       ],
       videos: [
-        { title: "Flutter Full Course", channel: "freeCodeCamp", duration: "8 hours" },
-        { title: "React Native Tutorial", channel: "Programming with Mosh", duration: "5 hours" }
+        { title: "Flutter Full Course", channel: "freeCodeCamp", duration: "8 hours", link: "https://www.youtube.com/watch?v=VPvVD8t02U8" },
+        { title: "React Native Tutorial", channel: "Programming with Mosh", duration: "5 hours", link: "https://www.youtube.com/watch?v=0-S5a0eXPoc" }
       ]
     },
     {
@@ -613,7 +613,12 @@ const Dashboard = () => {
                             <span className="text-xs text-accent">{video.duration}</span>
                           </div>
                         </div>
-                        <Button size="sm" variant="outline">
+                        <Button 
+                          size="sm" 
+                          variant="outline"
+                          onClick={() => window.open(video.link, '_blank')}
+                          className="cursor-pointer"
+                        >
                           <ExternalLink className="w-4 h-4 mr-1" />
                           Watch
                         </Button>
