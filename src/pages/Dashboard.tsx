@@ -584,7 +584,12 @@ const Dashboard = () => {
                             </div>
                           </div>
                         </div>
-                        <Button size="sm" variant="outline">
+                        <Button 
+                          size="sm" 
+                          variant="outline"
+                          onClick={() => window.open(course.link, '_blank')}
+                          className="cursor-pointer"
+                        >
                           <ExternalLink className="w-4 h-4 mr-1" />
                           View Course
                         </Button>
