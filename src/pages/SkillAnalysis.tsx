@@ -192,11 +192,13 @@ const SkillAnalysis = () => {
                 className="hidden"
                 id="resume-upload"
               />
-              <label htmlFor="resume-upload">
-                <Button variant="outline" className="cursor-pointer">
-                  Choose File
-                </Button>
-              </label>
+              <Button 
+                variant="outline" 
+                className="cursor-pointer"
+                onClick={() => document.getElementById('resume-upload')?.click()}
+              >
+                Choose File
+              </Button>
             </div>
           </CardContent>
         </Card>
