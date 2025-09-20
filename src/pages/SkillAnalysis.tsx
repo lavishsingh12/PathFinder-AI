@@ -50,7 +50,7 @@ const SkillAnalysis = () => {
     formData.append('resume', file); 
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/extract-skills", {
+      const response = await fetch("https://pathfinder-ai-c65o.onrender.com/extract-skills", {
         method: "POST",
         body: formData, // The browser will automatically set the correct headers for FormData
       });
@@ -92,7 +92,7 @@ const SkillAnalysis = () => {
     }
     setAnalysisStep('analyzing');
     try {
-      const response = await fetch("http://127.0.0.1:8000/analyze-skills", {
+      const response = await fetch("https://pathfinder-ai-c65o.onrender.com/analyze-skills", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ skills: currentSkills, targetRole: targetRole }),

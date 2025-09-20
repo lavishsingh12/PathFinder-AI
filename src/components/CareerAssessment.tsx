@@ -90,7 +90,7 @@ const CareerAssessment = ({ onClose }: CareerAssessmentProps) => {
         // Quiz finished → call backend
         setLoading(true);
         try {
-          const response = await fetch("http://127.0.0.1:8000/career-assessment", {
+          const response = await fetch("https://pathfinder-ai-c65o.onrender.com/career-assessment", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ answers: newAnswers }),
