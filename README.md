@@ -50,8 +50,8 @@ Many students and professionals struggle with **career confusion**:
 
 ```bash
 # Clone repo
-git clone https://github.com/yourusername/career-ai.git
-cd career-ai
+git clone https://github.com/lavishsingh12/PathFinder-AI.git
+cd PathFinder-AI
 ```
 
 ### 🔹 Backend Setup
@@ -82,7 +82,7 @@ npm run dev
 ```
 
 
-## 🎯 Why Career AI Stands Out
+## 🎯 Why PathFinder AI Stands Out
 
 ✅ Solves **real pain point** (career guidance gap)
 ✅ **User-friendly & Interactive** – intuitive cards & chat experience
@@ -95,10 +95,15 @@ npm run dev
 ## 🤝 Team & Contribution
 
 👨‍💻 **Lavish Singh Rajawat** – Backend Developer & Team leader
-🎨 **Ishan Sharma** – Frontend Developer
-📊 **Manmohit Singh rawat** – AI/ML Engineer (Chatbot + Roadmaps)
+
+👨‍💻 **Ishan Sharma** – Frontend Developer
+
+👨‍💻 **Manmohit Singh rawat** – AI/ML Engineer (Chatbot + Roadmaps)
+
 👨‍💻 **Taniya Jhamtani** - Deployment & Data Analyst
+
 👩‍💻 **Kanishka Mishra** – Research & Content (Data + Resources & PPT)
+
 
 
 ---
