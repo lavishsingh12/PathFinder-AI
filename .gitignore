@@ -7,9 +7,14 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
 dist
 dist-ssr
+
+# Environment Variables - VERY IMPORTANT
+# Prevents your secret API keys from being uploaded
+.env
 *.local
 
 # Editor directories and files
@@ -22,3 +27,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Python backend specific - NEWLY ADDED
+__pycache__/
+*.pyc
+venv/
+*.egg-info/

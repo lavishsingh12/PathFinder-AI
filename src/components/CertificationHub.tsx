@@ -53,7 +53,7 @@ const CertificationHub = () => {
       duration: "6 months",
       rating: 4.6,
       reviews: 87234,
-      price: "₹3,900/month",
+      price: "Free",
       originalPrice: "₹7,800",
       badge: "Professional Certificate",
       skills: ["Data Analytics", "R Programming", "SQL", "Tableau", "Data Visualization"],
@@ -83,7 +83,7 @@ const CertificationHub = () => {
       instructor: "Google Career Certificates Team",
       enrollments: "2.5M+ students",
       certificate: true,
-      link: "https://coursera.org/google-data-analytics"
+      link: "https://www.coursera.org/professional-certificates/google-data-analytics"
     },
     {
       id: 2,
@@ -134,7 +134,7 @@ const CertificationHub = () => {
       duration: "7 months",
       rating: 4.8,
       reviews: 92156,
-      price: "₹3,900/month",
+      price: "Free",
       originalPrice: "₹5,200",
       badge: "Meta Certified",
       skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap", "Figma"],
@@ -164,7 +164,7 @@ const CertificationHub = () => {
       instructor: "Meta Staff",
       enrollments: "1.2M+ students",
       certificate: true,
-      link: "https://coursera.org/meta-front-end-developer"
+      link: "https://www.coursera.org/professional-certificates/meta-front-end-developer"
     },
     {
       id: 4,
@@ -175,7 +175,7 @@ const CertificationHub = () => {
       duration: "6 months",
       rating: 4.7,
       reviews: 78234,
-      price: "₹3,900/month",
+      price: "Free",
       badge: "Google Certified",
       skills: ["User Research", "Wireframing", "Prototyping", "Figma", "Adobe XD"],
       description: "Get started in the fast-growing field of user experience (UX) design with a professional certificate.",
@@ -204,7 +204,7 @@ const CertificationHub = () => {
       instructor: "Google UX Design Team",
       enrollments: "800K+ students",
       certificate: true,
-      link: "https://coursera.org/google-ux-design"
+      link: "https://www.coursera.org/professional-certificates/google-ux-design"
     },
     {
       id: 5,
@@ -215,7 +215,7 @@ const CertificationHub = () => {
       duration: "8 months",
       rating: 4.5,
       reviews: 156789,
-      price: "₹3,900/month",
+      price: "Free",
       badge: "IBM Certified",
       skills: ["Python", "SQL", "Machine Learning", "Data Analysis", "Jupyter"],
       description: "Master the most up-to-date practical skills and knowledge for data scientists.",
@@ -244,7 +244,7 @@ const CertificationHub = () => {
       instructor: "IBM Skills Network Team",
       enrollments: "950K+ students",
       certificate: true,
-      link: "https://coursera.org/ibm-data-science"
+      link: "https://www.coursera.org/professional-certificates/ibm-data-science"
     },
     {
       id: 6,
@@ -255,7 +255,7 @@ const CertificationHub = () => {
       duration: "2 months",
       rating: 4.6,
       reviews: 34567,
-      price: "₹2,900/month",
+      price: "Free",
       badge: "Microsoft Certified",
       skills: ["Azure Services", "Cloud Concepts", "Security", "Compliance", "Pricing"],
       description: "Learn Azure fundamentals and prepare for the AZ-900 certification exam.",

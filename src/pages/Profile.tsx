@@ -24,14 +24,14 @@ import { useState } from "react";
 const Profile = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [profileData, setProfileData] = useState({
-    name: "Alex Johnson",
-    email: "alex.johnson@email.com",
-    location: "San Francisco, CA",
-    title: "Frontend Developer",
-    bio: "Passionate developer with 3+ years of experience in React and TypeScript. Looking to transition into full-stack development.",
-    skills: ["React.js", "JavaScript", "TypeScript", "CSS", "Node.js", "Git"],
-    goals: ["Learn Next.js", "Master GraphQL", "Get AWS certification"],
-    experience: "3+ years"
+    name: "Lavish Singh Rajawat",
+    email: "thelavish12@gmail.com",
+    location: "Jaipur, Rajasthan",
+    title: "ML Engineer and AI specialist",
+    bio: "P✨ Second-year B.Tech CSE student | Aspiring Developer | Exploring the realms of AI & Machine Learning with curiosity and passion 🌐🤖",
+    skills: ["Python", "Data Structures", "SQL", "CSS", "HTML", "Git", "Github"],
+    goals: ["Learn Next.js", "Master ML Algorithms", "Get AWS certification"],
+    experience: "1+ years"
   });
 
   const savedRecommendations = [
@@ -40,15 +40,15 @@ const Profile = () => {
       type: "Course",
       title: "Advanced React Patterns",
       provider: "TechEd Pro",
-      savedDate: "2024-01-15",
+      savedDate: "2025-08-15",
       status: "In Progress"
     },
     {
       id: 2,
       type: "Job",
-      title: "Senior Frontend Developer at TechCorp",
-      provider: "LinkedIn",
-      savedDate: "2024-01-12",
+      title: "Master ML core concepts",
+      provider: "Udemy",
+      savedDate: "2025-08-15",
       status: "Applied"
     },
     {
@@ -56,7 +56,7 @@ const Profile = () => {
       type: "Certification",
       title: "AWS Certified Developer",
       provider: "Amazon",
-      savedDate: "2024-01-10",
+      savedDate: "2025-08-15",
       status: "Planned"
     }
   ];
@@ -66,21 +66,21 @@ const Profile = () => {
       title: "Skill Master",
       description: "Completed 5 technical assessments",
       icon: Award,
-      date: "Jan 2024",
+      date: "Aug 2025",
       color: "text-accent"
     },
     {
       title: "Quick Learner", 
-      description: "Finished 3 courses in one month",
+      description: "Finished 2 courses in one month",
       icon: BookOpen,
-      date: "Dec 2023",
+      date: "Aug 2025",
       color: "text-success"
     },
     {
       title: "Goal Achiever",
       description: "Reached 3 career milestones",
       icon: Target,
-      date: "Nov 2023", 
+      date: "Aug 2025", 
       color: "text-primary"
     }
   ];

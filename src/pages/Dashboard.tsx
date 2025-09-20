@@ -60,12 +60,12 @@ const Dashboard = () => {
         { phase: "Advanced Topics", duration: "2-3 months", skills: ["System Design", "AWS", "Testing"] }
       ],
       courses: [
-        { name: "Complete Web Developer Course", provider: "Udemy", price: "Free", rating: 4.7, link: "https://udemy.com" },
-        { name: "React Developer Path", provider: "Coursera", price: "$49/month", rating: 4.8, link: "https://coursera.org" }
+        { name: "Complete Web Developer Course", provider: "Udemy", price: "$6", rating: 4.7, link: "https://www.udemy.com/course/codewithharry-web-development-course/?couponCode=PMNVD2025" },
+        { name: "React Developer Path", provider: "Coursera", price: "Free", rating: 4.8, link: "https://www.coursera.org/specializations/react" }
       ],
       videos: [
-        { title: "Web Development Roadmap 2024", channel: "Traversy Media", duration: "45 min" },
-        { title: "React Full Course", channel: "freeCodeCamp", duration: "12 hours" }
+        { title: "Web Development Roadmap 2024", channel: "Code with harry", duration: "139 videos", link: "https://youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w&si=TJhr_hBfJG2uT0Xe" },
+        { title: "React Full Course", channel: "freeCodeCamp", duration: "12 hours", link: "https://youtu.be/x4rFhThSX04?si=d5dao4KKoRMzjgZI" }
       ]
     },
     {
@@ -88,12 +88,12 @@ const Dashboard = () => {
         { phase: "Machine Learning", duration: "4-5 months", skills: ["Scikit-learn", "TensorFlow", "Deep Learning"] }
       ],
       courses: [
-        { name: "Data Science Specialization", provider: "Coursera", price: "$39/month", rating: 4.9, link: "https://coursera.org" },
-        { name: "Python for Data Science", provider: "edX", price: "Free", rating: 4.6, link: "https://edx.org" }
+        { name: "Data Science Specialization", provider: "Coursera", price: "Free", rating: 4.9, link: "https://www.coursera.org/specializations/jhu-data-science" },
+        { name: "Python for Data Science", provider: "Udemy", price: "$7", rating: 4.6, link: "https://www.udemy.com/course/python-data-science-master-course/?srsltid=AfmBOorXiMC5ldtvRzb9Ngc5rn328sFO-1zejAHVJiuqxR_BgX19A8KQ&couponCode=PMNVD2025" }
       ],
       videos: [
-        { title: "Data Science Full Course", channel: "Simplilearn", duration: "8 hours" },
-        { title: "Machine Learning Explained", channel: "3Blue1Brown", duration: "3 hours" }
+        { title: "Data Science Full Course", channel: "Free Code Camp", duration: "6 hours", link: "https://www.youtube.com/watch?v=ua-CiDNNj30" },
+        { title: "Machine Learning Full Course", channel: "Free Code Camp", duration: "18 videos", link: "https://youtube.com/playlist?list=PLWKjhJtqVAblStefaz_YOVpDWqcRScc2s&si=GJl5ei9_XkZupuwt" }
       ]
     },
     {
@@ -116,12 +116,12 @@ const Dashboard = () => {
         { phase: "Certifications", duration: "2-3 months", skills: ["CEH", "CISSP", "CompTIA Security+"] }
       ],
       courses: [
-        { name: "Cybersecurity Specialization", provider: "Coursera", price: "$49/month", rating: 4.8, link: "https://coursera.org" },
-        { name: "Ethical Hacking Course", provider: "Udemy", price: "$89", rating: 4.7, link: "https://udemy.com" }
+        { name: "Cybersecurity Specialization", provider: "Coursera", price: "Free", rating: 4.8, link: "https://www.coursera.org/professional-certificates/google-cybersecurity" },
+        { name: "Ethical Hacking Course", provider: "Udemy", price: "$89", rating: 4.7, link: "https://www.udemy.com/topic/ethical-hacking/?srsltid=AfmBOooXh5aUDWGF7NY_c2D4FxzRpduyYLePknG1mHNpqNP4bjce_Fl-" }
       ],
       videos: [
-        { title: "Cybersecurity Full Course", channel: "Professor Messer", duration: "10 hours" },
-        { title: "Ethical Hacking Tutorial", channel: "The Cyber Mentor", duration: "6 hours" }
+        { title: "Cybersecurity Full Course", channel: "My CS", duration: "5 hours", link: "https://www.youtube.com/watch?v=U_P23SqJaDc" },
+        { title: "Ethical Hacking Tutorial", channel: "Free Code Camp", duration: "15 hours", link: "https://www.youtube.com/watch?v=3Kq1MIfTWCE" }
       ]
     },
     {
@@ -144,12 +144,12 @@ const Dashboard = () => {
         { phase: "Advanced Features", duration: "2-3 months", skills: ["Push Notifications", "App Store Deployment"] }
       ],
       courses: [
-        { name: "Flutter Development Course", provider: "Udemy", price: "$79", rating: 4.8, link: "https://udemy.com" },
-        { name: "React Native Specialization", provider: "Coursera", price: "$39/month", rating: 4.7, link: "https://coursera.org" }
+        { name: "Flutter Development Course", provider: "Udemy", price: "$50", rating: 4.8, link: "https://www.udemy.com/course/flutter-bootcamp-with-dart/" },
+        { name: "React Native Specialization", provider: "Coursera", price: "Free", rating: 4.7, link: "https://www.coursera.org/specializations/meta-react-native" }
       ],
       videos: [
-        { title: "Flutter Full Course", channel: "freeCodeCamp", duration: "8 hours" },
-        { title: "React Native Tutorial", channel: "Programming with Mosh", duration: "5 hours" }
+        { title: "Flutter Full Course", channel: "freeCodeCamp", duration: "8 hours", link: "https://www.youtube.com/watch?v=VPvVD8t02U8" },
+        { title: "React Native Tutorial", channel: "Programming with Mosh", duration: "5 hours", link: "https://www.youtube.com/watch?v=0-S5a0eXPoc" }
       ]
     },
     {
@@ -172,12 +172,12 @@ const Dashboard = () => {
         { phase: "Leadership Skills", duration: "Ongoing", skills: ["Stakeholder Management", "Communication", "Agile"] }
       ],
       courses: [
-        { name: "Product Management Course", provider: "Coursera", price: "$49/month", rating: 4.9, link: "https://coursera.org" },
-        { name: "PM Certification", provider: "Udacity", price: "$399/month", rating: 4.7, link: "https://udacity.com" }
+        { name: "Product Management Course", provider: "Coursera", price: "Free", rating: 4.9, link: "https://www.coursera.org/learn/product-management-an-introduction" },
+        { name: "PM Certification", provider: "Udacity", price: "$102/month", rating: 4.7, link: "https://www.udacity.com/course/product-manager-nanodegree--nd036" }
       ],
       videos: [
-        { title: "Product Management Basics", channel: "Product School", duration: "2 hours" },
-        { title: "How to become a PM", channel: "Google Career Certificates", duration: "45 min" }
+        { title: "Product Management Full Course", channel: "Intellipaat", duration: "6 hours", link: "https://youtu.be/O_efm7SLNvM?si=EBE5q1DYsPePmFf0" },
+        { title: "Product Manager Full Course 2025", channel: "Intellipaat", duration: "7 Hours", link: "https://www.youtube.com/live/wZwByQTksxQ?si=1G42MsdckNtacLFa" }
       ]
     },
     {
@@ -200,12 +200,12 @@ const Dashboard = () => {
         { phase: "Advanced UX", duration: "3-4 months", skills: ["Usability Testing", "Information Architecture", "Interaction Design"] }
       ],
       courses: [
-        { name: "Google UX Design Certificate", provider: "Coursera", price: "$39/month", rating: 4.8, link: "https://coursera.org" },
-        { name: "UI/UX Design Bootcamp", provider: "Udemy", price: "$119", rating: 4.6, link: "https://udemy.com" }
+        { name: "Google UX Design Certificate", provider: "Coursera", price: "Free", rating: 4.8, link: "https://www.coursera.org/professional-certificates/google-ux-design" },
+        { name: "UI/UX Design Bootcamp", provider: "Udemy", price: "$39", rating: 4.6, link: "https://www.udemy.com/course/responsive-ui-design-in-figma-2h-deep-dive/?couponCode=LETSLEARNNOW" }
       ],
       videos: [
-        { title: "UX Design Full Course", channel: "DesignCourse", duration: "6 hours" },
-        { title: "Figma Tutorial", channel: "Flux", duration: "4 hours" }
+        { title: "UI UX Design Full Course 2025", channel: "Intellipaat", duration: "10 hours", link: "https://youtu.be/jdmX8ZIMRUU?si=E2XA3Z3uB0Hv28tk" },
+        { title: "Figma Tutorial", channel: "Flux", duration: "53 videos", link: "https://youtube.com/playlist?list=PLXC_gcsKLD6lovcamt6i27q0hbXq6fmwi&si=Om7mNWWti4i9DYJH" }
        ]
      },
      {
@@ -228,12 +228,12 @@ const Dashboard = () => {
          { phase: "Advanced Topics", duration: "2-3 months", skills: ["Microservices", "DevOps", "System Design"] }
        ],
        courses: [
-         { name: "Full Stack Web Development", provider: "Coursera", price: "$49/month", rating: 4.8, link: "https://coursera.org" },
-         { name: "MEAN Stack Course", provider: "Udemy", price: "$99", rating: 4.7, link: "https://udemy.com" }
+         { name: "Full Stack Web Development", provider: "Coursera", price: "Free", rating: 4.8, link: "https://www.coursera.org/learn/fullstack-web-development" },
+         { name: "MEAN Stack Course", provider: "Udemy", price: "$95", rating: 4.7, link: "https://www.udemy.com/topic/mean-stack/?p=2" }
        ],
        videos: [
-         { title: "Full Stack Development Course", channel: "freeCodeCamp", duration: "10 hours" },
-         { title: "MERN Stack Tutorial", channel: "Traversy Media", duration: "8 hours" }
+         { title: "Full Stack Development Course", channel: "freeCodeCamp", duration: "8 hours", link: "https://youtu.be/nu_pCVPKzTk?si=UnMTj_qN6TK7kFG5" },
+         { title: "MERN Stack Tutorial", channel: "Traversy Media", duration: "6 videos", link: "https://youtube.com/playlist?list=PLTMNWTDdd5z_CtvbzG6r1f4hjnCaphPTV&si=dSMCdLu4-NxoJZvA" }
        ]
      },
      {
@@ -256,12 +256,12 @@ const Dashboard = () => {
          { phase: "Specialized Skills", duration: "2-3 months", skills: ["NoSQL", "Cloud Databases", "Data Warehousing"] }
        ],
        courses: [
-         { name: "Database Administration", provider: "Oracle University", price: "$299", rating: 4.6, link: "https://oracle.com" },
-         { name: "SQL for Data Science", provider: "Coursera", price: "$39/month", rating: 4.8, link: "https://coursera.org" }
+         { name: "Database Administration", provider: "Oracle University", price: "$50", rating: 4.6, link: "https://education.oracle.com/oracle-certification-path/pFamily_32" },
+         { name: "SQL for Data Science", provider: "Coursera", price: "Free", rating: 4.8, link: "https://www.coursera.org/learn/sql-for-data-science" }
        ],
        videos: [
-         { title: "Database Management Course", channel: "Simplilearn", duration: "6 hours" },
-         { title: "SQL Complete Tutorial", channel: "Derek Banas", duration: "4 hours" }
+         { title: "Database Management Course", channel: "Neso Academy", duration: "56 videos", link: "https://youtube.com/playlist?list=PLBlnK6fEyqRi_CUQ-FXxgzKQ1dwr_ZJWZ&si=sZrKuxlOYbDBKiRj" },
+         { title: "SQL Complete Tutorial", channel: "Apna College", duration: "3 hours", link: "https://youtu.be/hlGoQC332VM?si=VqugmC13j1nMjLSv" }
        ]
      },
      {
@@ -284,12 +284,12 @@ const Dashboard = () => {
          { phase: "Specialized Writing", duration: "2-3 months", skills: ["Technical Writing", "Copywriting", "Email Marketing"] }
        ],
        courses: [
-         { name: "Content Marketing Certification", provider: "HubSpot", price: "Free", rating: 4.7, link: "https://hubspot.com" },
-         { name: "SEO Writing Course", provider: "Udemy", price: "$79", rating: 4.6, link: "https://udemy.com" }
+         { name: "Content Marketing Certification", provider: "HubSpot", price: "Free", rating: 4.7, link: "https://academy.hubspot.com/courses/content-marketing" },
+         { name: "SEO Writing Course", provider: "Udemy", price: "$9", rating: 4.6, link: "https://www.udemy.com/course/seo-get-to-number1-in-google-search/?couponCode=PMNVD2025" }
        ],
        videos: [
-         { title: "Content Writing Masterclass", channel: "Income School", duration: "3 hours" },
-         { title: "Copywriting Secrets", channel: "Dan Lok", duration: "2 hours" }
+         { title: "Content Writing Full Course", channel: "Ws Cube Tech", duration: "71 videos", link: "https://youtube.com/playlist?list=PLjVLYmrlmjGdxy_kIIkOKNZrE3zf9V2lY&si=bLZU9wUuCCE31yZ-" },
+         { title: "Copywriting Secrets", channel: "Dan Lok", duration: "22 videos", link: "https://youtube.com/playlist?list=PLEmTTOfet46PQuKfi4T11JBbAqMqBHC1G&si=xU6j9IsUbuEWcUWM" }
        ]
      },
      {
@@ -312,12 +312,12 @@ const Dashboard = () => {
          { phase: "Analytics & Optimization", duration: "2-3 months", skills: ["Google Analytics", "A/B Testing", "Conversion Optimization"] }
        ],
        courses: [
-         { name: "Google Digital Marketing Course", provider: "Google", price: "Free", rating: 4.8, link: "https://grow.google" },
-         { name: "Digital Marketing Specialization", provider: "Coursera", price: "$49/month", rating: 4.7, link: "https://coursera.org" }
+         { name: "Google Digital Marketing Course", provider: "Google", price: "Free", rating: 4.8, link: "https://skillshop.exceedlms.com/student/collection/1384851?locale=en-GB&utm_source=google&utm_medium=institutions&utm_campaign=sou--google__med--organicsearch__cam--gwgsite__con--null__ter--null" },
+         { name: "Digital Marketing Specialization", provider: "Coursera", price: "Free", rating: 4.7, link: "https://www.coursera.org/specializations/digital-marketing" }
        ],
        videos: [
-         { title: "Digital Marketing Full Course", channel: "Simplilearn", duration: "8 hours" },
-         { title: "Facebook Ads Tutorial", channel: "Ben Heath", duration: "4 hours" }
+         { title: "Digital Marketing Full Course with AI", channel: "Ws Cube Tech", duration: "4 hours", link: "https://youtu.be/kunkYTKFNtI?si=SIfVc9QFPTkT7lTW" },
+         { title: "Facebook Ads Tutorial", channel: "Ben Heath", duration: "4 hours", link: "https://youtu.be/BZrio_G_1Cs?si=gxsgPPHfwJTNKbHB" }
        ]
      }
    ];
@@ -584,7 +584,12 @@ const Dashboard = () => {
                             </div>
                           </div>
                         </div>
-                        <Button size="sm" variant="outline">
+                        <Button 
+                          size="sm" 
+                          variant="outline"
+                          onClick={() => window.open(course.link, '_blank')}
+                          className="cursor-pointer"
+                        >
                           <ExternalLink className="w-4 h-4 mr-1" />
                           View Course
                         </Button>
@@ -608,7 +613,12 @@ const Dashboard = () => {
                             <span className="text-xs text-accent">{video.duration}</span>
                           </div>
                         </div>
-                        <Button size="sm" variant="outline">
+                        <Button 
+                          size="sm" 
+                          variant="outline"
+                          onClick={() => window.open(video.link, '_blank')}
+                          className="cursor-pointer"
+                        >
                           <ExternalLink className="w-4 h-4 mr-1" />
                           Watch
                         </Button>

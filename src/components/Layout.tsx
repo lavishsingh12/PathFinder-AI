@@ -1,5 +1,8 @@
 import { Outlet, NavLink } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { 
   LayoutDashboard, 
   MessageCircle, 
@@ -14,6 +17,8 @@ import { useState } from "react";
 
 const Layout = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const navigation = [
     { name: 'Dashboard', href: '/', icon: LayoutDashboard },
@@ -58,10 +63,48 @@ const Layout = () => {
 
             {/* Auth Button */}
             <div className="flex items-center gap-3">
-              <Button variant="outline" size="sm" className="hidden sm:flex">
-                <LogIn className="w-4 h-4 mr-2" />
-                Sign In
-              </Button>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button variant="outline" size="sm" className="hidden sm:flex">
+                    <LogIn className="w-4 h-4 mr-2" />
+                    Sign In
+                  </Button>
+                </DialogTrigger>
+                <DialogContent className="sm:max-w-md">
+                  <DialogHeader>
+                    <DialogTitle>Sign In to PathFinder AI</DialogTitle>
+                  </DialogHeader>
+                  <div className="space-y-4 py-4">
+                    <div className="space-y-2">
+                      <Label htmlFor="email">Email</Label>
+                      <Input
+                        id="email"
+                        type="email"
+                        placeholder="Enter your email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="password">Password</Label>
+                      <Input
+                        id="password"
+                        type="password"
+                        placeholder="Enter your password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                      />
+                    </div>
+                    <Button className="w-full">
+                      <LogIn className="w-4 h-4 mr-2" />
+                      Sign In
+                    </Button>
+                    <div className="text-center text-sm text-muted-foreground">
+                      Don't have an account? <button className="text-primary hover:underline">Sign up</button>
+                    </div>
+                  </div>
+                </DialogContent>
+              </Dialog>
               
               {/* Mobile Menu Button */}
               <Button
@@ -91,10 +134,48 @@ const Layout = () => {
                     <span>{item.name}</span>
                   </NavLink>
                 ))}
-                <Button variant="outline" size="sm" className="w-full mt-4">
-                  <LogIn className="w-4 h-4 mr-2" />
-                  Sign In
-                </Button>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button variant="outline" size="sm" className="w-full mt-4">
+                      <LogIn className="w-4 h-4 mr-2" />
+                      Sign In
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent className="sm:max-w-md">
+                    <DialogHeader>
+                      <DialogTitle>Sign In to PathFinder AI</DialogTitle>
+                    </DialogHeader>
+                    <div className="space-y-4 py-4">
+                      <div className="space-y-2">
+                        <Label htmlFor="mobile-email">Email</Label>
+                        <Input
+                          id="mobile-email"
+                          type="email"
+                          placeholder="Enter your email"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="mobile-password">Password</Label>
+                        <Input
+                          id="mobile-password"
+                          type="password"
+                          placeholder="Enter your password"
+                          value={password}
+                          onChange={(e) => setPassword(e.target.value)}
+                        />
+                      </div>
+                      <Button className="w-full">
+                        <LogIn className="w-4 h-4 mr-2" />
+                        Sign In
+                      </Button>
+                      <div className="text-center text-sm text-muted-foreground">
+                        Don't have an account? <button className="text-primary hover:underline">Sign up</button>
+                      </div>
+                    </div>
+                  </DialogContent>
+                </Dialog>
               </nav>
             </div>
           )}
