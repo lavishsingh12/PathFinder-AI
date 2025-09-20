@@ -16,13 +16,21 @@ Many students and professionals struggle with **career confusion**:
 **Career AI** is an intelligent career companion that provides:
 
 ✨Smart Career Roadmaps – step-by-step guidance to reach your dream role
+
 ✨AI-Powered Chatbot – instant answers to career questions
+
 ✨Resume Feedback – upload resume text & get actionable suggestions
+
 ✨Skill Analysis – see strengths & areas to improve
+
 ✨Course + Video Recommendations – curated learning resources
+
 ✨Salary & Market Insights – know industry standards
+
 ✨Explore 500+ Career Paths – discover opportunities across industries
+
 ✨Certification Hub – integrate top certifications with direct links & discounts
+
 ✨Career Assessment Quiz – AI-based evaluation to suggest the most suitable career paths
 
 
@@ -85,9 +93,13 @@ npm run dev
 ## 🎯 Why PathFinder AI Stands Out
 
 ✅ Solves **real pain point** (career guidance gap)
+
 ✅ **User-friendly & Interactive** – intuitive cards & chat experience
+
 ✅ Uses **cutting-edge AI (Gemini)** for contextual answers
+
 ✅ **End-to-End Solution** – covers career roadmap, learning, and resume analysis
+
 ✅ Ready for **scaling & deployment**
 
 ---
@@ -110,10 +122,13 @@ npm run dev
 
 ## 🌟 Future Scope
 
-Internship & Job Integrations – live openings based on chosen career roadmap
-Gamification & Streaks – motivate users through challenges, points & achievements
-Multi-language Support – make career guidance accessible to non-English users
-AI Mentorship Matching – connect users with real mentors & alumni networks
+**Internship & Job Integrations** – live openings based on chosen career roadmap
+
+**Gamification & Streaks** – motivate users through challenges, points & achievements
+
+**Multi-language Support** – make career guidance accessible to non-English users
+
+**AI Mentorship Matching** – connect users with real mentors & alumni networks
 
 ---
 
