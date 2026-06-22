@@ -137,6 +137,14 @@ npm run dev
 > *Pathfinder AI is designed to **empower students & professionals** to make smarter career decisions with the help of AI. It bridges the gap between learning and employability.*
 
 ---
+## 🌐 Live Demo
+https://path-finder-ai-black.vercel.app/
+
+## Me 👨🏻‍💻
+Lavish Singh Rajawat
+B.Tech Student | AI-ML Enthusiast  
+GitHub: [@lavishsingh12](https://github.com/lavishsingh12)
+Linkedin: [@lavishsingh12](https://www.linkedin.com/in/lavishsingh12)
 
 ## 🤝 Contributing
 
